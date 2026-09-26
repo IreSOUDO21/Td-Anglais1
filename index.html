@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>
+      TD & Soutien d'Anglais en Ligne | Irénée SOUDO - BEPC & BAC 2026
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: { 800: '#0B192C', 900: '#030C1E', 950: '#020612' },
+              brand: {
+                blue: '#1E3A8A',
+                cyan: '#06B6D4',
+                teal: '#0D9488',
+                gold: '#F59E0B',
+                green: '#22C55E',
+                whatsapp: '#25D366',
+              },
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+              heading: ['Outfit', 'sans-serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4,0,0.6,1) infinite',
+              float: 'float 4s ease-in-out infinite',
+              marquee: 'marquee 25s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%,100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      html {
+        scroll-padding-top: env(safe-area-inset-top, 0px);
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #030c1e;
+        color: #f8fafc;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Outfit', sans-serif;
+      }
+      .glass-card {
+        background: rgba(15, 23, 42, 0.78);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .glass-card-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .glass-card-hover:hover {
+        transform: translateY(-5px);
+        border-color: rgba(6, 182, 212, 0.4);
+        box-shadow: 0 20px 40px -15px rgba(6, 182, 212, 0.2);
+      }
+      .text-gradient-gold {
+        background: linear-gradient(
+          135deg,
+          #fde047 0%,
+          #f59e0b 50%,
+          #d97706 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .text-gradient-cyan {
+        background: linear-gradient(135deg, #38bdf8 0%, #06b6d4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .pulse-glow {
+        animation: pulseGlow 2s infinite;
+      }
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 35px rgba(37, 211, 102, 0.8);
+        }
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020612;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #06b6d4;
+      }
+    </style>
+  </head>
+  <body
+    class="antialiased selection:bg-brand-cyan selection:text-navy-900 overflow-x-hidden"
+  >
+    <div
+      class="bg-gradient-to-r from-red-600 via-brand-gold to-brand-cyan text-white text-xs sm:text-sm font-extrabold py-2.5 px-4 text-center tracking-wide flex items-center justify-center gap-2 shadow-lg z-50 relative"
+    >
+      <span class="flex h-2.5 w-2.5 relative">
+        <span
+          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"
+        ></span>
+        <span
+          class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"
+        ></span>
+      </span>
+      <span
+        >RENTRÉE TD DE NOVEMBRE : Places limitées à 50 apprenants par groupe !
+        Tarifs réduits d'ouverture (les 3 premiers mois).</span
+      >
+    </div>
+
+    <nav
+      class="sticky top-0 z-40 bg-navy-950/85 backdrop-blur-xl border-b border-slate-800/80 transition-all duration-300"
+      style="padding-top: env(safe-area-inset-top, 0px)"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <a href="#" class="flex items-center gap-3 group">
+          <div
+            class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-blue via-brand-cyan to-brand-gold p-0.5 shadow-lg group-hover:scale-105 transition-transform"
+          >
+            <div
+              class="w-full h-full bg-navy-900 rounded-[10px] flex items-center justify-center"
+            >
+              <i
+                class="fa-solid fa-rocket text-brand-gold text-lg group-hover:rotate-12 transition-transform"
+              ></i>
+            </div>
+          </div>
+          <div>
+            <span
+              class="font-heading font-black text-xl tracking-tight text-white block leading-none"
+              >TD ANGLAIS <span class="text-brand-cyan">PRO</span></span
+            >
+            <span
+              class="text-[10px] font-semibold text-slate-400 tracking-wider uppercase block mt-1"
+              >Irénée SOUDO | Formateur</span
+            >
+          </div>
+        </a>
+        <div
+          class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-wider text-slate-300"
+        >
+          <a
+            href="#warning-section"
+            class="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-amber-400 font-extrabold"
+            ><i class="fa-solid fa-triangle-exclamation"></i> L'Erreur à
+            Éviter</a
+          >
+          <a href="#methode" class="hover:text-brand-cyan transition-colors"
+            >Méthode & Programme</a
+          >
+          <a href="#demo-quiz" class="hover:text-brand-cyan transition-colors"
+            >Test de Niveau</a
+          >
+          <a href="#tarifs" class="hover:text-brand-cyan transition-colors"
+            >Formules & Avantages</a
+          >
+          <a href="#faq" class="hover:text-brand-cyan transition-colors">FAQ</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a
+            href="tel:0166283566"
+            class="hidden md:flex items-center gap-2 text-xs font-bold text-slate-300 hover:text-white transition-colors bg-slate-900/90 px-3.5 py-2 rounded-xl border border-slate-800"
+          >
+            <i class="fa-solid fa-phone text-brand-cyan"></i
+            ><span>01 66 28 35 66</span>
+          </a>
+          <button
+            onclick="openRegistrationModal()"
+            class="relative inline-flex items-center justify-center px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-black uppercase tracking-wider text-navy-950 transition-all bg-gradient-to-r from-brand-gold via-yellow-400 to-amber-500 rounded-xl shadow-lg hover:shadow-brand-gold/30 hover:scale-105 active:scale-95"
+          >
+            <i class="fa-solid fa-bolt mr-2 animate-bounce"></i
+            ><span>Bloquer ma place (1 000 F)</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative pt-10 pb-20 lg:pt-16 lg:pb-28 overflow-hidden">
+      <div
+        class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-blue/20 rounded-full blur-[140px] pointer-events-none"
+      ></div>
+      <div
+        class="absolute top-1/3 right-10 w-[350px] h-[350px] bg-brand-cyan/15 rounded-full blur-[100px] pointer-events-none"
+      ></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-brand-cyan/40 text-brand-cyan text-xs font-bold tracking-wide shadow-inner"
+            >
+              <i class="fa-solid fa-calendar-check text-brand-gold"></i
+              ><span
+                >RENTRÉE OFFICIELLE : NOVEMBRE 2026 | 50 APPRENANTS /
+                GROUPE</span
+              >
+            </div>
+            <h1
+              class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]"
+            >
+              NE LAISSEZ PLUS L'ANGLAIS
+              <span class="text-gradient-gold">FAIRE CHUTER</span> LA MOYENNE DE
+              VOTRE ENFANT !
+            </h1>
+            <p
+              class="text-base sm:text-lg text-slate-300 max-w-2xl font-medium leading-relaxed mx-auto lg:mx-0"
+            >
+              Préparez efficacement le
+              <strong class="text-white">BEPC & BAC</strong> dès la rentrée de
+              novembre avec le
+              <strong class="text-brand-cyan">Professeur Irénée SOUDO</strong>.
+              Cours synthétiques, méthodologie d'examen, résumés PDF et direct
+              hebdomadaire via
+              <span class="text-white">Google Classroom & Google Meet</span>.
+            </p>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 max-w-xl mx-auto lg:mx-0 text-left"
+            >
+              <div
+                class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800"
+              >
+                <div
+                  class="w-7 h-7 rounded-lg bg-green-500/20 text-green-400 flex items-center justify-center shrink-0 font-bold text-sm"
+                >
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <span class="text-xs sm:text-sm text-slate-200 font-medium"
+                  ><strong class="text-white">50 Places max</strong> par groupe
+                  pour un suivi sur-mesure</span
+                >
+              </div>
+              <div
+                class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800"
+              >
+                <div
+                  class="w-7 h-7 rounded-lg bg-amber-500/20 text-brand-gold flex items-center justify-center shrink-0 font-bold text-sm"
+                >
+                  <i class="fa-solid fa-ticket"></i>
+                </div>
+                <span class="text-xs sm:text-sm text-slate-200 font-medium"
+                  ><strong class="text-white">Réservation 1 000 F</strong>
+                  seulement pour bloquer le tarif promo</span
+                >
+              </div>
+            </div>
+            <div
+              class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
+            >
+              <button
+                onclick="openRegistrationModal()"
+                class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-whatsapp via-emerald-500 to-green-600 text-navy-950 font-black text-base rounded-2xl shadow-xl hover:shadow-brand-whatsapp/40 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-3 group pulse-glow"
+              >
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <div class="text-left">
+                  <span
+                    class="block text-[10px] uppercase font-extrabold tracking-wider opacity-90"
+                    >RÉSERVER MA PLACE EN 1 CLIC</span
+                  >
+                  <span class="block text-sm font-black"
+                    >BLOQUER LA PLACE (1 000 F)</span
+                  >
+                </div>
+              </button>
+              <a
+                href="#demo-quiz"
+                class="w-full sm:w-auto px-6 py-4 bg-slate-900/90 hover:bg-slate-800 text-white font-bold text-sm rounded-2xl border border-slate-700/80 hover:border-brand-cyan transition-all flex items-center justify-center gap-2"
+              >
+                <i class="fa-solid fa-vial text-brand-cyan"></i
+                ><span>Tester le niveau de l'élève</span>
+              </a>
+            </div>
+            <div
+              class="pt-4 flex items-center justify-center lg:justify-start gap-4 border-t border-slate-800/80"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-blue to-brand-cyan p-0.5 shrink-0 shadow-lg"
+              >
+                <div
+                  class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center font-black text-brand-gold text-lg"
+                >
+                  IS
+                </div>
+              </div>
+              <div class="text-left">
+                <p class="text-sm font-extrabold text-white">Irénée SOUDO</p>
+                <p class="text-xs text-slate-400">
+                  Professeur d'Anglais & Spécialiste Préparation Examens
+                  Nationaux
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative">
+            <div
+              class="absolute -top-6 -left-6 z-20 glass-card p-3 rounded-2xl flex items-center gap-3 border border-slate-700 shadow-2xl floating-badge"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.svg"
+                alt="Google Classroom"
+                class="w-8 h-8"
+              />
+              <div>
+                <p class="text-xs font-bold text-white">Google Classroom</p>
+                <p class="text-[10px] text-emerald-400 font-semibold">
+                  Fiches & Quiz 24h/7j
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute -bottom-6 -right-6 z-20 glass-card p-3 rounded-2xl flex items-center gap-3 border border-slate-700 shadow-2xl floating-badge"
+              style="animation-delay: 2s"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Meet_icon_%282020%29.svg"
+                alt="Google Meet"
+                class="w-8 h-8"
+              />
+              <div>
+                <p class="text-xs font-bold text-white">Google Meet</p>
+                <p class="text-[10px] text-brand-cyan font-semibold">
+                  1 Direct / semaine (Pratique)
+                </p>
+              </div>
+            </div>
+            <div
+              class="relative rounded-3xl overflow-hidden border border-slate-800 bg-gradient-to-b from-slate-900 to-navy-950 p-6 shadow-2xl"
+            >
+              <div
+                class="flex items-center justify-between pb-4 border-b border-slate-800 mb-6"
+              >
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-red-500"></span
+                  ><span class="w-3 h-3 rounded-full bg-yellow-500"></span
+                  ><span class="w-3 h-3 rounded-full bg-green-500"></span>
+                </div>
+                <span
+                  class="text-xs font-mono text-brand-cyan font-bold bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20"
+                  >INSCRIPTIONS NOVEMBRE OUVERTES</span
+                >
+              </div>
+              <div class="space-y-4">
+                <div
+                  class="bg-slate-900/90 p-4 rounded-2xl border border-slate-800"
+                >
+                  <div class="flex justify-between items-center mb-2">
+                    <span
+                      class="text-xs font-bold text-white flex items-center gap-2"
+                      ><i class="fa-solid fa-users text-brand-gold"></i>Groupe 1
+                      : 4ème & 3ème (BEPC)</span
+                    >
+                    <span
+                      class="text-xs font-bold text-brand-gold"
+                      id="g1-counter-text"
+                      >— / 50</span
+                    >
+                  </div>
+                  <div
+                    class="w-full h-3 bg-slate-800 rounded-full overflow-hidden p-0.5"
+                  >
+                    <div
+                      class="h-full bg-gradient-to-r from-amber-500 to-brand-gold rounded-full transition-all duration-1000"
+                      id="g1-bar"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                  <div
+                    class="text-[11px] text-slate-400 mt-2 flex justify-between font-medium"
+                  >
+                    <span>Réservation : <strong>1 000 FCFA</strong></span
+                    ><span class="font-bold text-brand-gold"
+                      >2 500 FCFA / mois*</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="bg-slate-900/90 p-4 rounded-2xl border border-slate-800"
+                >
+                  <div class="flex justify-between items-center mb-2">
+                    <span
+                      class="text-xs font-bold text-white flex items-center gap-2"
+                      ><i class="fa-solid fa-user-graduate text-brand-cyan"></i
+                      >Groupe 2 : 2nde, 1ère & Tle (BAC)</span
+                    >
+                    <span
+                      class="text-xs font-bold text-brand-cyan"
+                      id="g2-counter-text"
+                      >— / 50</span
+                    >
+                  </div>
+                  <div
+                    class="w-full h-3 bg-slate-800 rounded-full overflow-hidden p-0.5"
+                  >
+                    <div
+                      class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full transition-all duration-1000"
+                      id="g2-bar"
+                      style="width: 0%"
+                    ></div>
+                  </div>
+                  <div
+                    class="text-[11px] text-slate-400 mt-2 flex justify-between font-medium"
+                  >
+                    <span>Réservation : <strong>1 000 FCFA</strong></span
+                    ><span class="font-bold text-brand-cyan"
+                      >3 000 FCFA / mois*</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-[11px] text-amber-200 leading-snug flex items-start gap-2.5"
+                >
+                  <i
+                    class="fa-solid fa-circle-info text-brand-gold text-sm shrink-0 mt-0.5"
+                  ></i>
+                  <span
+                    >*<strong>Tarif promotionnel de lancement</strong> réservé
+                    aux inscrits de novembre, valable pour les 3 premiers
+                    mois.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="warning-section"
+      class="py-14 bg-gradient-to-r from-red-950/60 via-slate-900 to-navy-950 border-y border-red-900/40 relative"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="glass-card rounded-3xl p-6 sm:p-10 border border-red-500/30 shadow-2xl relative overflow-hidden"
+        >
+          <div
+            class="absolute -right-10 -bottom-10 opacity-10 text-red-500 pointer-events-none"
+          >
+            <i class="fa-solid fa-triangle-exclamation text-[220px]"></i>
+          </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10"
+          >
+            <div class="lg:col-span-8 space-y-4">
+              <div
+                class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-500/20 text-red-400 border border-red-500/40 text-xs font-bold uppercase tracking-wider"
+              >
+                <i class="fa-solid fa-circle-exclamation"></i> MISE EN GARDE
+                PÉDAGOGIQUE AUX PARENTS
+              </div>
+              <h2
+                class="text-2xl sm:text-4xl font-black text-white tracking-tight leading-tight"
+              >
+                L'ERREUR QUE DOIVENT ÉVITER LA PLUPART DES PARENTS :
+              </h2>
+              <p class="text-base sm:text-lg font-bold text-red-300">
+                "Attendre les derniers jours des examens pour recruter un
+                répétiteur pour leurs enfants !"
+              </p>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                L'anglais au BEPC et au BAC est une matière d'assimilation
+                progressive (structures de réphrasage, vocabulaire thématique,
+                compréhension de texte, essai argumentatif). Vouloir tout
+                rattraper à 2 mois des examens engendre du stress, de la
+                confusion et des échecs évitables.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div
+                  class="bg-navy-950/80 p-3 rounded-xl border border-red-500/20 text-xs text-slate-300"
+                >
+                  <span class="text-red-400 font-bold block mb-1"
+                    >Préparation Tardive (Mai - Juin)</span
+                  >Stress intense, lacunes accumulées, automatismes non
+                  intégrés, risques majeurs aux épreuves.
+                </div>
+                <div
+                  class="bg-navy-950/80 p-3 rounded-xl border border-emerald-500/30 text-xs text-slate-300"
+                >
+                  <span class="text-emerald-400 font-bold block mb-1"
+                    >Préparation Dès Novembre (TD PRO)</span
+                  >7 mois d'entraînement régulier, maîtrise des pièges,
+                  confiance orale & écrite, garantissant la mention !
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-4 text-center lg:text-right">
+              <div
+                class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 space-y-4"
+              >
+                <p
+                  class="text-xs font-extrabold text-slate-300 uppercase tracking-wider"
+                >
+                  Démarrage de la promotion
+                </p>
+                <p class="text-2xl font-black text-brand-gold">Novembre 2026</p>
+                <p class="text-xs text-slate-400">
+                  Places limitées à <strong>50 élèves par groupe</strong> pour
+                  garantir un suivi rigoureux.
+                </p>
+                <button
+                  onclick="openRegistrationModal()"
+                  class="w-full py-3.5 bg-gradient-to-r from-red-500 to-amber-500 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all"
+                >
+                  Ne pas attendre : Inscrire mon enfant
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-navy-950 border-b border-slate-800 py-3 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 flex items-center gap-4">
+        <span
+          class="shrink-0 bg-brand-gold/10 text-brand-gold text-xs font-bold px-3 py-1 rounded-full border border-brand-gold/30 flex items-center gap-2"
+        >
+          <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span
+          >INFO
+        </span>
+        <div class="overflow-hidden whitespace-nowrap w-full">
+          <div
+            class="inline-block animate-marquee text-xs font-medium text-slate-300"
+          >
+            <span class="mx-4"
+              ><i class="fa-solid fa-circle-info text-brand-cyan mr-1"></i>
+              Rentrée officielle fixée en Novembre : ne pas attendre les
+              derniers mois avant les examens.</span
+            >
+            <span class="mx-4 text-slate-600">|</span>
+            <span class="mx-4"
+              ><i class="fa-solid fa-circle-info text-amber-400 mr-1"></i>
+              Groupes limités à 50 élèves pour garantir un suivi
+              personnalisé.</span
+            >
+            <span class="mx-4 text-slate-600">|</span>
+            <span class="mx-4"
+              ><i class="fa-solid fa-circle-info text-brand-gold mr-1"></i>
+              Tarifs préférentiels valables pour les 3 premiers mois de
+              cours.</span
+            >
+            <span class="mx-4 text-slate-600">|</span>
+            <span class="mx-4"
+              ><i class="fa-solid fa-circle-info text-green-400 mr-1"></i> Accès
+              Google Classroom 24h/7j + 1 direct Google Meet chaque
+              semaine.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="demo-quiz" class="py-16 bg-navy-900/60 relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <span
+            class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20"
+            >TEST DIAGNOSTIQUE RAPIDE</span
+          >
+          <h2 class="text-2xl sm:text-4xl font-black text-white mt-3">
+            Testez les réflexes en Anglais de votre enfant !
+          </h2>
+          <p class="text-slate-400 text-sm mt-2">
+            3 questions réelles types BEPC / BAC inspirées des réphrasages et de
+            la grammaire d'examen.
+          </p>
+        </div>
+        <div
+          class="glass-card rounded-3xl p-6 sm:p-8 border border-slate-800 relative overflow-hidden shadow-2xl"
+          id="quiz-container"
+        >
+          <div
+            class="flex items-center justify-between text-xs text-slate-400 font-bold mb-3"
+          >
+            <span id="quiz-step-text">Question 1 / 3</span
+            ><span id="quiz-score-text" class="text-brand-gold"
+              >Score: 0 pts</span
+            >
+          </div>
+          <div
+            class="w-full h-2 bg-slate-800 rounded-full mb-8 overflow-hidden"
+          >
+            <div
+              id="quiz-progress-bar"
+              class="h-full bg-brand-cyan transition-all duration-300"
+              style="width: 33%"
+            ></div>
+          </div>
+          <div id="quiz-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="methode" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="text-brand-cyan font-bold text-xs uppercase tracking-widest bg-brand-cyan/10 px-3 py-1 rounded-full border border-brand-cyan/20"
+            >PROGRAMME D'EXCELLENCE PÉDAGOGIQUE</span
+          >
+          <h2
+            class="text-3xl sm:text-5xl font-black text-white mt-3 tracking-tight"
+          >
+            Une Méthode Structurée pour Réussir Haut la Main
+          </h2>
+          <p class="text-slate-400 text-base mt-4">
+            Alignée sur les manuels officiels (dont <em>Keep in Touch 3e</em>)
+            et les exigences précises des épreuves nationales du BEPC et du BAC
+            au Bénin.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div
+            class="glass-card p-6 rounded-2xl border border-slate-800 glass-card-hover"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-brand-blue/30 text-brand-cyan flex items-center justify-center text-xl font-black mb-4"
+            >
+              1
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">
+              Fiches Synthétiques PDF
+            </h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Résumés de grammaire, connecteurs logiques, listes de vocabulaire
+              thématique (Heroes, Ceremonies, Health, Jobs) téléchargeables et
+              imprimables 24h/7j.
+            </p>
+          </div>
+          <div
+            class="glass-card p-6 rounded-2xl border border-slate-800 glass-card-hover"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-500/20 text-brand-gold flex items-center justify-center text-xl font-black mb-4"
+            >
+              2
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">
+              Maîtrise du Rephrasing
+            </h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Entraînement intensif sur le réphrasage (Conditionnels, Discours
+              indirect, Passive voice, Present Perfect Continuous) pour
+              sécuriser tous les points de grammaire.
+            </p>
+          </div>
+          <div
+            class="glass-card p-6 rounded-2xl border border-slate-800 glass-card-hover"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-green-500/20 text-green-400 flex items-center justify-center text-xl font-black mb-4"
+            >
+              3
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">
+              Quizzes Auto-corrigés
+            </h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Exercices interactifs hebdomadaires sur Google Classroom pour
+              évaluer la compréhension immédiatement avec explications
+              personnalisées.
+            </p>
+          </div>
+          <div
+            class="glass-card p-6 rounded-2xl border border-slate-800 glass-card-hover"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl font-black mb-4"
+            >
+              4
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">
+              1 Direct / Semaine
+            </h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Séance en direct interactive sur Google Meet pour travailler la
+              prononciation, lever les blocages et maîtriser la rédaction guidée
+              & l'essai argumentatif.
+            </p>
+          </div>
+        </div>
+        <div class="glass-card rounded-3xl p-8 border border-slate-800">
+          <h3 class="text-xl font-black text-white mb-6 text-center">
+            Aperçu du Programme Annuel des 2 Groupes (Dès Novembre)
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div
+              class="bg-slate-900/80 p-6 rounded-2xl border border-amber-500/20"
+            >
+              <div
+                class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800"
+              >
+                <span class="text-base font-black text-brand-gold"
+                  >GROUPE 1 : Premier Cycle (4e & 3e)</span
+                ><span
+                  class="text-xs font-bold bg-amber-500/10 text-amber-400 px-2.5 py-1 rounded-full"
+                  >BEPC</span
+                >
+              </div>
+              <ul class="space-y-3 text-xs text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-gold mt-0.5"></i
+                  ><span
+                    ><strong>Module 1 :</strong> History & Heroes (Figures
+                    historiques, Behanzin, Tirailleurs Sénégalais, Mother
+                    Mary).</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-gold mt-0.5"></i
+                  ><span
+                    ><strong>Module 2 :</strong> Celebrations & Ceremonies
+                    (Initiation, baptism, Thanksgiving, expressions avec
+                    <em>take</em>).</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-gold mt-0.5"></i
+                  ><span
+                    ><strong>Module 3 :</strong> Grammar & Rephrasing (Present
+                    Perfect Continuous, préfixes in/un/dis, connectors
+                    however/instead, when/as/until).</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-gold mt-0.5"></i
+                  ><span
+                    ><strong>Module 4 :</strong> Guided Writing & Reading
+                    Comprehension (Techniques de réponse précise aux questions
+                    de texte).</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="bg-slate-900/80 p-6 rounded-2xl border border-brand-cyan/20"
+            >
+              <div
+                class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800"
+              >
+                <span class="text-base font-black text-brand-cyan"
+                  >GROUPE 2 : Second Cycle (2nde, 1ère, Tle)</span
+                ><span
+                  class="text-xs font-bold bg-brand-cyan/10 text-brand-cyan px-2.5 py-1 rounded-full"
+                  >BAC</span
+                >
+              </div>
+              <ul class="space-y-3 text-xs text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-cyan mt-0.5"></i
+                  ><span
+                    ><strong>Module 1 :</strong> Advanced Grammar Mastery
+                    (Conditionals type 1, 2, 3, Reported Speech, Passive Voice,
+                    Question Tags).</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-cyan mt-0.5"></i
+                  ><span
+                    ><strong>Module 2 :</strong> Argumentative Essays
+                    (Méthodologie détaillée de la dissertation d'anglais au
+                    BAC).</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-cyan mt-0.5"></i
+                  ><span
+                    ><strong>Module 3 :</strong> Text Analysis & Translation
+                    (Analyse approfondie des textes thématiques et
+                    traduction).</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-check text-brand-cyan mt-0.5"></i
+                  ><span
+                    ><strong>Module 4 :</strong> Traitement Intensif des Annales
+                    Officielles du BAC des 10 dernières années.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="tarifs"
+      class="py-20 relative bg-navy-950/80 border-t border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="text-brand-gold font-bold text-xs uppercase tracking-widest bg-brand-gold/10 px-3 py-1 rounded-full border border-brand-gold/20"
+            >TARIFS TRANSPARENTS & ACCESSIBLES</span
+          >
+          <h2
+            class="text-3xl sm:text-5xl font-black text-white mt-3 tracking-tight"
+          >
+            Choisissez la Formule de Votre Enfant
+          </h2>
+          <p class="text-slate-400 text-base mt-4">
+            Réservation de <strong>1 000 FCFA</strong> seulement à l'inscription
+            pour bloquer l'une des <strong>50 places</strong> par groupe.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div
+            class="glass-card rounded-3xl p-8 border border-slate-800 glass-card-hover relative flex flex-col justify-between"
+          >
+            <div
+              class="absolute -top-3.5 right-6 bg-gradient-to-r from-amber-500 to-brand-gold text-navy-950 font-black text-[11px] px-3.5 py-1 rounded-full uppercase tracking-wider shadow-md"
+            >
+              PRÉPARATION BEPC
+            </div>
+            <div>
+              <div
+                class="w-14 h-14 rounded-2xl bg-amber-500/10 text-brand-gold flex items-center justify-center text-2xl font-bold mb-6 border border-amber-500/20"
+              >
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <h3 class="text-2xl font-black text-white">
+                Groupe 1 : Premier Cycle
+              </h3>
+              <p class="text-slate-400 text-xs font-semibold mt-1">
+                Classes de 4ème & 3ème
+              </p>
+              <div
+                class="my-6 p-4 rounded-2xl bg-slate-900/90 border border-slate-800"
+              >
+                <div class="flex items-baseline gap-2">
+                  <span class="text-3xl sm:text-4xl font-black text-brand-gold"
+                    >2 500 F</span
+                  ><span class="text-slate-400 font-bold text-sm">/ mois</span>
+                </div>
+                <p class="text-xs text-slate-300 font-medium mt-1">
+                  + <strong class="text-white">1 000 FCFA</strong> de frais de
+                  réservation à l'inscription.
+                </p>
+                <div
+                  class="mt-2 text-[11px] text-amber-300/90 font-medium bg-amber-500/10 p-2 rounded-lg"
+                >
+                  <i class="fa-solid fa-clock mr-1"></i> Tarif de lancement pour
+                  les 3 premiers mois.
+                </div>
+              </div>
+              <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span
+                    >Méthodologie complète du <strong>Rephrasing</strong></span
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span>Vocabulaire thématique & Reading Comprehension</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span>Guided Writing & rédaction pas à pas</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span
+                    ><strong>1 Direct Google Meet / semaine</strong> (Oral &
+                    Exercices)</span
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span>Quizzes interactifs auto-corrigés sur Classroom</span>
+                </li>
+              </ul>
+            </div>
+            <button
+              onclick="openRegistrationModal('Groupe 1 (4ème & 3ème)')"
+              class="w-full py-4 bg-gradient-to-r from-amber-500 to-brand-gold text-navy-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-lg hover:shadow-brand-gold/25 hover:scale-[1.02] active:scale-95 transition-all"
+            >
+              Inscrire mon enfant en 4e / 3e
+            </button>
+          </div>
+          <div
+            class="glass-card rounded-3xl p-8 border-2 border-brand-cyan/50 glass-card-hover relative flex flex-col justify-between bg-gradient-to-b from-slate-900/90 to-navy-900"
+          >
+            <div
+              class="absolute -top-3.5 right-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-black text-[11px] px-3.5 py-1 rounded-full uppercase tracking-wider shadow-md"
+            >
+              PRÉPARATION BAC
+            </div>
+            <div>
+              <div
+                class="w-14 h-14 rounded-2xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-2xl font-bold mb-6 border border-brand-cyan/20"
+              >
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h3 class="text-2xl font-black text-white">
+                Groupe 2 : Second Cycle
+              </h3>
+              <p class="text-slate-400 text-xs font-semibold mt-1">
+                Classes de 2nde, 1ère & Terminale
+              </p>
+              <div
+                class="my-6 p-4 rounded-2xl bg-slate-900/90 border border-slate-800"
+              >
+                <div class="flex items-baseline gap-2">
+                  <span class="text-3xl sm:text-4xl font-black text-brand-cyan"
+                    >3 000 F</span
+                  ><span class="text-slate-400 font-bold text-sm">/ mois</span>
+                </div>
+                <p class="text-xs text-slate-300 font-medium mt-1">
+                  + <strong class="text-white">1 000 FCFA</strong> de frais de
+                  réservation à l'inscription.
+                </p>
+                <div
+                  class="mt-2 text-[11px] text-cyan-300/90 font-medium bg-brand-cyan/10 p-2 rounded-lg"
+                >
+                  <i class="fa-solid fa-clock mr-1"></i> Tarif de lancement pour
+                  les 3 premiers mois.
+                </div>
+              </div>
+              <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span>Grammaire avancée & structures complexes</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span>Méthodologie complète des épreuves du BAC</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span>Essais argumentatifs & rédactions structurées</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span
+                    ><strong>1 Direct Google Meet / semaine</strong> (Expression
+                    orale)</span
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fa-solid fa-circle-check text-green-400"></i
+                  ><span>Fiches PDF téléchargeables & annales corrigées</span>
+                </li>
+              </ul>
+            </div>
+            <button
+              onclick="openRegistrationModal('Groupe 2 (2nde, 1ère, Tle)')"
+              class="w-full py-4 bg-gradient-to-r from-brand-cyan to-blue-600 text-white font-black text-sm uppercase tracking-wider rounded-xl shadow-lg hover:shadow-brand-cyan/25 hover:scale-[1.02] active:scale-95 transition-all"
+            >
+              Inscrire mon enfant au Lycée
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-navy-950 border-y border-slate-800">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl sm:text-4xl font-black text-white">
+            Pourquoi notre formule est imbattable ?
+          </h2>
+          <p class="text-slate-400 text-sm mt-2">
+            Comparez le coût d'un répétiteur traditionnel et l'efficacité de
+            notre solution Google Classroom & Meet.
+          </p>
+        </div>
+        <div
+          class="glass-card rounded-3xl overflow-hidden border border-slate-800"
+        >
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-800 text-center"
+          >
+            <div class="p-6 bg-red-950/20">
+              <span
+                class="text-xs font-bold text-red-400 uppercase tracking-widest block mb-2"
+                >RÉPÉTITEUR À DOMICILE</span
+              >
+              <div class="text-2xl font-black text-slate-300">
+                25 000 F - 50 000 F
+              </div>
+              <p class="text-xs text-slate-500 mb-4">par mois</p>
+              <ul
+                class="text-xs text-slate-400 space-y-2 text-left list-disc list-inside"
+              >
+                <li>Coût financier lourd pour les parents</li>
+                <li>Horaires rigides & aléas de transport</li>
+                <li>Aucun support numérique ni replay</li>
+              </ul>
+            </div>
+            <div class="p-6">
+              <span
+                class="text-xs font-bold text-yellow-400 uppercase tracking-widest block mb-2"
+                >CLASSES DE SOUTIEN EN VILLE</span
+              >
+              <div class="text-2xl font-black text-slate-300">
+                10 000 F - 15 000 F
+              </div>
+              <p class="text-xs text-slate-500 mb-4">par mois</p>
+              <ul
+                class="text-xs text-slate-400 space-y-2 text-left list-disc list-inside"
+              >
+                <li>Salles surchargées (+60 élèves)</li>
+                <li>Déplacements fréquents le soir</li>
+                <li>Peu d'interactions individuelles</li>
+              </ul>
+            </div>
+            <div class="p-6 bg-brand-blue/20 relative">
+              <span
+                class="absolute top-3 right-3 bg-green-500 text-navy-950 font-black text-[9px] px-2 py-0.5 rounded-full"
+                >MEILLEUR CHOIX</span
+              >
+              <span
+                class="text-xs font-bold text-brand-cyan uppercase tracking-widest block mb-2"
+                >NOTRE TD EN LIGNE PRO</span
+              >
+              <div class="text-3xl font-black text-brand-gold">
+                2 500 F - 3 000 F
+              </div>
+              <p class="text-xs text-slate-300 mb-4 font-bold">
+                par mois (+ 1 000 F réservation)
+              </p>
+              <ul
+                class="text-xs text-slate-200 space-y-2 text-left font-medium"
+              >
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-green-400"></i> Accès
+                  illimité 24h/7j à la classe virtuelle
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-green-400"></i> Quizzes
+                  auto-corrigés & fiches PDF
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-green-400"></i> Direct
+                  hebdomadaire interactif Meet
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-green-400"></i> Suivi
+                  personnalisé par M. SOUDO
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-16 bg-navy-950 border-t border-slate-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl sm:text-4xl font-black text-white">
+            Questions Fréquemment Posées
+          </h2>
+          <p class="text-slate-400 text-sm mt-2">
+            Tout ce que vous devez savoir avant de réserver la place de votre
+            enfant pour novembre.
+          </p>
+        </div>
+        <div class="space-y-4" id="faq-accordion">
+          <div
+            class="glass-card rounded-2xl border border-slate-800 overflow-hidden"
+          >
+            <button
+              onclick="toggleFaq(1)"
+              class="w-full p-5 text-left font-bold text-white text-sm sm:text-base flex justify-between items-center hover:text-brand-cyan transition-colors"
+            >
+              <span>Quand débutent officiellement les cours de TD ?</span
+              ><i
+                id="faq-icon-1"
+                class="fa-solid fa-chevron-down text-brand-cyan transition-transform"
+              ></i>
+            </button>
+            <div
+              id="faq-body-1"
+              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/50 pt-3"
+            >
+              La rentrée TD démarre officiellement au mois de
+              <strong>Novembre 2026</strong>. Il est essentiel de s'inscrire dès
+              maintenant pour bloquer la place parmi les 50 apprenants autorisés
+              par groupe et bénéficier des tarifs préférentiels.
+            </div>
+          </div>
+          <div
+            class="glass-card rounded-2xl border border-slate-800 overflow-hidden"
+          >
+            <button
+              onclick="toggleFaq(2)"
+              class="w-full p-5 text-left font-bold text-white text-sm sm:text-base flex justify-between items-center hover:text-brand-cyan transition-colors"
+            >
+              <span
+                >Pourquoi les tarifs peuvent-ils doubler au bout de 3 mois
+                ?</span
+              ><i
+                id="faq-icon-2"
+                class="fa-solid fa-chevron-down text-brand-cyan transition-transform"
+              ></i>
+            </button>
+            <div
+              id="faq-body-2"
+              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/50 pt-3"
+            >
+              Les montants actuels (2 500 F et 3 000 F/mois) sont des
+              <strong>tarifs promotionnels de lancement</strong> appliqués pour
+              les 3 premiers mois d'accompagnement. Pour les élèves qui
+              s'inscriront tardivement en cours d'année, les mensualités
+              pourront être révisées. Réservez dès novembre pour garantir ce
+              tarif !
+            </div>
+          </div>
+          <div
+            class="glass-card rounded-2xl border border-slate-800 overflow-hidden"
+          >
+            <button
+              onclick="toggleFaq(3)"
+              class="w-full p-5 text-left font-bold text-white text-sm sm:text-base flex justify-between items-center hover:text-brand-cyan transition-colors"
+            >
+              <span>Comment mon enfant va-t-il accéder aux cours ?</span
+              ><i
+                id="faq-icon-3"
+                class="fa-solid fa-chevron-down text-brand-cyan transition-transform"
+              ></i>
+            </button>
+            <div
+              id="faq-body-3"
+              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/50 pt-3"
+            >
+              Dès la validation des frais de réservation (1 000 FCFA), vous
+              recevrez le code d'accès privé pour rejoindre la classe virtuelle
+              sur l'application <strong>Google Classroom</strong> ainsi que le
+              lien direct pour les visioconférences
+              <strong>Google Meet</strong> hebdomadaires.
+            </div>
+          </div>
+          <div
+            class="glass-card rounded-2xl border border-slate-800 overflow-hidden"
+          >
+            <button
+              onclick="toggleFaq(4)"
+              class="w-full p-5 text-left font-bold text-white text-sm sm:text-base flex justify-between items-center hover:text-brand-cyan transition-colors"
+            >
+              <span>Comment effectuer le paiement de la réservation ?</span
+              ><i
+                id="faq-icon-4"
+                class="fa-solid fa-chevron-down text-brand-cyan transition-transform"
+              ></i>
+            </button>
+            <div
+              id="faq-body-4"
+              class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/50 pt-3"
+            >
+              Les 1 000 FCFA de réservation s'effectuent simplement par Mobile
+              Money (MTN / Moov / Wave) directement au numéro officiel du
+              professeur :
+              <strong class="text-brand-cyan">01 66 28 35 66</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="fixed z-40"
+      style="
+        bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+        right: 1.5rem;
+      "
+    >
+      <button
+        onclick="toggleAiChat()"
+        class="w-14 h-14 rounded-full bg-gradient-to-tr from-brand-blue via-brand-cyan to-brand-gold text-white font-bold shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-transform border border-brand-cyan/50 relative group"
+      >
+        <i class="fa-solid fa-robot text-2xl"></i
+        ><span
+          class="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-navy-950"
+        ></span>
+      </button>
+    </div>
+
+    <div
+      id="ai-chat-drawer"
+      class="fixed z-50 w-[92vw] sm:w-[380px] h-[520px] glass-card rounded-3xl border border-slate-700 shadow-2xl flex flex-col overflow-hidden hidden"
+      style="bottom: calc(6rem + env(safe-area-inset-bottom, 0px)); right: 1rem"
+    >
+      <div
+        class="bg-slate-900 p-4 border-b border-slate-800 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="w-9 h-9 rounded-xl bg-brand-cyan/20 text-brand-cyan flex items-center justify-center font-bold"
+          >
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-white">
+              Assistant du Prof. SOUDO
+            </h4>
+            <p class="text-[10px] text-green-400 font-semibold" id="ai-status">
+              • En ligne
+            </p>
+          </div>
+        </div>
+        <button
+          onclick="toggleAiChat()"
+          class="text-slate-400 hover:text-white"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div
+        class="bg-navy-950/80 px-3 py-2 border-b border-slate-800 flex items-center gap-2 overflow-x-auto text-[10px]"
+      >
+        <button
+          onclick="askQuickQuestion('Pourquoi démarrer en novembre ?')"
+          class="px-2.5 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 whitespace-nowrap"
+        >
+          Pourquoi en Novembre ?
+        </button>
+        <button
+          onclick="askQuickQuestion('Quels sont les tarifs ?')"
+          class="px-2.5 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 whitespace-nowrap"
+        >
+          Tarifs & Réservation
+        </button>
+        <button
+          onclick="askQuickQuestion('Comment se passent les cours ?')"
+          class="px-2.5 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 whitespace-nowrap"
+        >
+          Google Classroom
+        </button>
+      </div>
+      <div
+        id="chat-messages"
+        class="flex-1 p-4 overflow-y-auto space-y-3 text-xs"
+      >
+        <div
+          class="bg-slate-800/80 p-3 rounded-2xl text-slate-200 border border-slate-700/50 max-w-[85%] leading-relaxed"
+        >
+          Bonjour ! Je suis l'assistant du Professeur Irénée SOUDO. Posez-moi
+          vos questions sur les cours de TD d'Anglais en ligne (BEPC/BAC)
+          démarrant en Novembre.
+        </div>
+      </div>
+      <div
+        class="p-3 bg-slate-900 border-t border-slate-800 flex items-center gap-2"
+      >
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Posez votre question..."
+          class="flex-1 bg-slate-800 text-white text-xs px-3 py-2.5 rounded-xl border border-slate-700 focus:outline-none focus:border-brand-cyan"
+          onkeydown="if (event.key==='Enter') sendAiMessage()"
+        />
+        <button
+          onclick="sendAiMessage()"
+          id="ai-send-btn"
+          class="w-9 h-9 rounded-xl bg-brand-cyan text-navy-950 font-bold flex items-center justify-center hover:scale-105 active:scale-95"
+        >
+          <i class="fa-solid fa-paper-plane text-xs"></i>
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="registration-modal"
+      class="fixed inset-0 z-50 bg-navy-950/85 backdrop-blur-md flex items-center justify-center p-4 hidden"
+    >
+      <div
+        class="glass-card max-w-lg w-full rounded-3xl border border-slate-700 p-6 sm:p-8 relative overflow-hidden shadow-2xl max-h-[90vh] overflow-y-auto"
+      >
+        <button
+          onclick="closeRegistrationModal()"
+          class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="text-center mb-6">
+          <div
+            class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-brand-whatsapp/20 text-brand-whatsapp text-2xl mb-3"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 class="text-xl font-black text-white">
+            Réservation de Place (1 000 FCFA)
+          </h3>
+          <p class="text-slate-400 text-xs mt-1">
+            Bloquez le tarif promotionnel pour la rentrée de Novembre !
+          </p>
+        </div>
+        <div id="reservation-form" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1"
+              >Nom & Prénom de l'Élève *</label
+            >
+            <input
+              type="text"
+              id="student-name"
+              required
+              placeholder="Ex: SOSSOU Jean"
+              class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan"
+            />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1"
+              >Programme Souhaité *</label
+            >
+            <select
+              id="program-select"
+              required
+              class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan"
+            >
+              <option value="g1">
+                Groupe 1 : 4ème & 3ème (Prépa BEPC - 2 500 F/mois)
+              </option>
+              <option value="g2">
+                Groupe 2 : 2nde, 1ère & Terminale (Prépa BAC - 3 000 F/mois)
+              </option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1"
+              >Numéro WhatsApp du Parent / Élève *</label
+            >
+            <input
+              type="tel"
+              id="student-phone"
+              required
+              placeholder="Ex: 01 66 00 00 00"
+              class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan"
+            />
+          </div>
+          <div
+            class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-[11px] text-slate-400 space-y-1"
+          >
+            <p class="font-bold text-white">
+              Modalité de Réservation Mobile Money :
+            </p>
+            <p>
+              Frais de réservation :
+              <strong class="text-brand-gold">1 000 FCFA</strong>
+            </p>
+            <p>
+              Numéro officiel MoMo / Wave :
+              <strong class="text-brand-cyan">01 66 28 35 66</strong>
+            </p>
+            <p class="text-[10px] text-amber-300/80 mt-1">
+              * Garantit votre place parmi les 50 élèves du groupe pour
+              novembre.
+            </p>
+          </div>
+          <button
+            type="button"
+            onclick="handleReservationSubmit()"
+            class="w-full py-4 bg-gradient-to-r from-brand-whatsapp to-emerald-500 text-navy-950 font-black text-sm uppercase tracking-wider rounded-xl shadow-lg hover:shadow-brand-whatsapp/30 hover:scale-[1.01] active:scale-95 transition-all flex items-center justify-center gap-2"
+          >
+            <i class="fa-brands fa-whatsapp text-lg"></i
+            ><span>CONFIRMER MA RÉSERVATION VIA WHATSAPP</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ---------- Quiz ----------
+      const quizQuestions = [
+        {
+          question:
+            "1. Choisissez la forme correcte : 'If he _______ hard, he will pass his English exam.'",
+          options: ['studies', 'studied', 'will study', 'study'],
+          correct: 0,
+          explanation:
+            "Conditionnelle type 1 (Présent + Futur simple) : la subordonnée avec 'if' prend le présent simple.",
+        },
+        {
+          question:
+            "2. Réphrasage : 'She started learning English 3 years ago.' = 'She _______ English for 3 years.'",
+          options: [
+            'has been learning',
+            'is learning',
+            'learned',
+            'will learn',
+          ],
+          correct: 0,
+          explanation:
+            'Action commencée dans le passé et qui se poursuit : Present Perfect Continuous.',
+        },
+        {
+          question: "3. Quel mot signifie 'Réussir avec mention' en anglais ?",
+          options: [
+            'Fail an exam',
+            'Pass with distinction',
+            'Drop out',
+            'Skip class',
+          ],
+          correct: 1,
+          explanation:
+            "'Pass with distinction' signifie réussir brillamment son examen avec mention !",
+        },
+      ];
+      let currentQuestion = 0,
+        userScore = 0;
+      function renderQuiz() {
+        const container = document.getElementById('quiz-content');
+        const q = quizQuestions[currentQuestion];
+        document.getElementById('quiz-step-text').innerText = `Question ${
+          currentQuestion + 1
+        } / ${quizQuestions.length}`;
+        document.getElementById(
+          'quiz-score-text'
+        ).innerText = `Score: ${userScore} pts`;
+        document.getElementById('quiz-progress-bar').style.width = `${
+          ((currentQuestion + 1) / quizQuestions.length) * 100
+        }%`;
+        container.innerHTML =
+          `<h3 class="text-base sm:text-lg font-bold text-white mb-6">${q.question}</h3><div class="space-y-3">` +
+          q.options
+            .map(
+              (opt, idx) =>
+                `<button onclick="handleAnswer(${idx})" class="w-full text-left p-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-brand-cyan text-xs sm:text-sm text-slate-200 transition-all font-medium flex items-center justify-between group"><span>${opt}</span><i class="fa-solid fa-chevron-right text-slate-600 group-hover:text-brand-cyan transition-colors"></i></button>`
+            )
+            .join('') +
+          `</div>`;
+      }
+      function handleAnswer(index) {
+        if (index === quizQuestions[currentQuestion].correct) userScore += 10;
+        currentQuestion++;
+        if (currentQuestion < quizQuestions.length) renderQuiz();
+        else showQuizResults();
+      }
+      function showQuizResults() {
+        const container = document.getElementById('quiz-content');
+        try {
+          confetti({ particleCount: 90, spread: 70, origin: { y: 0.7 } });
+        } catch (e) {}
+        container.innerHTML = `<div class="text-center py-6">
+                <div class="w-16 h-16 bg-brand-gold/20 text-brand-gold rounded-full flex items-center justify-center text-3xl mx-auto mb-4 border border-brand-gold/30"><i class="fa-solid fa-trophy"></i></div>
+                <h3 class="text-2xl font-black text-white">Résultat du Test : ${userScore} / 30 pts</h3>
+                <p class="text-xs sm:text-sm text-slate-300 mt-2 max-w-md mx-auto leading-relaxed">${
+                  userScore >= 20
+                    ? "Bravo ! L'élève possède de bonnes bases. Avec notre accompagnement dès novembre, il/elle visera une excellente note au BEPC/BAC !"
+                    : "Quelques lacunes importantes identifiées. N'attendez pas la dernière minute : notre programme de novembre permettra de redresser la barre rapidement !"
+                }</p>
+                <button onclick="openRegistrationModal()" class="mt-6 px-8 py-3.5 bg-gradient-to-r from-amber-500 to-brand-gold text-navy-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all">RÉSERVER SA PLACE EN NOVEMBRE (1 000 FCFA)</button>
+            </div>`;
+      }
+
+      // ---------- FAQ ----------
+      function toggleFaq(index) {
+        const body = document.getElementById(`faq-body-${index}`),
+          icon = document.getElementById(`faq-icon-${index}`);
+        if (body.classList.contains('hidden')) {
+          body.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        } else {
+          body.classList.add('hidden');
+          icon.style.transform = 'rotate(0deg)';
+        }
+      }
+
+      // ---------- Registration Modal ----------
+      function openRegistrationModal(defaultProgram) {
+        if (defaultProgram) {
+          const select = document.getElementById('program-select');
+          select.value = defaultProgram.includes('1') ? 'g1' : 'g2';
+        }
+        document
+          .getElementById('registration-modal')
+          .classList.remove('hidden');
+      }
+      function closeRegistrationModal() {
+        document.getElementById('registration-modal').classList.add('hidden');
+      }
+
+      // ---------- DB: compteurs partagés réels ----------
+      let dbApi = null;
+      const CAP = 50;
+      async function initCounters() {
+        try {
+          dbApi = await claude.use('db');
+        } catch (e) {
+          dbApi = null;
+        }
+        if (!dbApi) {
+          document.getElementById('g1-counter-text').innerText =
+            'Bientôt disponible';
+          document.getElementById('g2-counter-text').innerText =
+            'Bientôt disponible';
+          return;
+        }
+        subscribeGroupCount('g1', 'g1-counter-text', 'g1-bar');
+        subscribeGroupCount('g2', 'g2-counter-text', 'g2-bar');
+      }
+      function subscribeGroupCount(group, textId, barId) {
+        try {
+          dbApi
+            .collection('reservations')
+            .where('group', '==', group)
+            .onSnapshot(
+              (snap) => {
+                const count = Math.min(snap.docs.length, CAP);
+                document.getElementById(
+                  textId
+                ).innerText = `${count} / ${CAP} Inscrit(e)s`;
+                document.getElementById(barId).style.width = `${
+                  (count / CAP) * 100
+                }%`;
+              },
+              (err) => {
+                document.getElementById(textId).innerText = `— / ${CAP}`;
+              }
+            );
+        } catch (e) {
+          document.getElementById(textId).innerText = `— / ${CAP}`;
+        }
+      }
+      async function recordReservation(group) {
+        if (!dbApi) return;
+        try {
+          await dbApi
+            .collection('reservations')
+            .add({ group: group, ts: Date.now() });
+        } catch (e) {}
+      }
+
+      function handleReservationSubmit() {
+        const name = document.getElementById('student-name').value;
+        const programSelect = document.getElementById('program-select');
+        const group = programSelect.value;
+        const programLabel =
+          programSelect.options[programSelect.selectedIndex].text;
+        const phone = document.getElementById('student-phone').value;
+        if (!name || !phone) {
+          alert('Merci de renseigner le nom et le numéro WhatsApp.');
+          return;
+        }
+
+        recordReservation(group);
+
+        const textMsg = `Bonjour M. Irénée SOUDO,\n\nJe souhaite réserver une place pour le TD d'Anglais en Ligne (Rentrée de Novembre).\n\n• Nom de l'élève : ${name}\n• Programme : ${programLabel}\n• Numéro : ${phone}\n\nMerci de me confirmer la réservation de 1 000 FCFA.`;
+        const whatsappUrl = `https://wa.me/2290166283566?text=${encodeURIComponent(
+          textMsg
+        )}`;
+        try {
+          confetti({ particleCount: 120, spread: 80, origin: { y: 0.6 } });
+        } catch (e) {}
+        setTimeout(() => {
+          window.open(whatsappUrl, '_blank');
+          closeRegistrationModal();
+        }, 600);
+      }
+
+      // ---------- Assistant IA (Claude via sample) ----------
+      let sampleApi = null;
+      let chatHistory = [];
+      const COURSE_CONTEXT = `Tu es l'assistant virtuel du Professeur Irénée SOUDO, qui donne des cours de TD (soutien) d'Anglais en ligne au Bénin pour préparer le BEPC et le BAC. Réponds en français, de façon brève, chaleureuse et concrète (3-5 phrases maximum), en te basant UNIQUEMENT sur les informations suivantes :
+- Rentrée officielle : Novembre 2026. Deux groupes, 50 élèves maximum chacun.
+- Groupe 1 (4ème & 3ème, prépa BEPC) : 2 500 FCFA/mois. Groupe 2 (2nde, 1ère, Terminale, prépa BAC) : 3 000 FCFA/mois.
+- Ces tarifs sont promotionnels pour les 3 premiers mois seulement, puis peuvent être révisés à la hausse pour les inscriptions tardives.
+- Réservation de la place : 1 000 FCFA via Mobile Money (MTN/Moov) ou Wave, au numéro 01 66 28 35 66.
+- Contenu : fiches PDF de grammaire et vocabulaire, quizzes auto-corrigés sur Google Classroom (accès 24h/7j), 1 séance en direct par semaine sur Google Meet pour l'oral et la pratique.
+- Programme Groupe 1 : History & Heroes, Celebrations & Ceremonies, Grammar & Rephrasing, Guided Writing.
+- Programme Groupe 2 : Advanced Grammar (conditionnels, discours indirect, voix passive), essais argumentatifs méthodologie BAC, analyse de texte et traduction, annales du BAC.
+- Si on te demande de réserver une place, invite la personne à cliquer sur le bouton "Bloquer ma place" ou à écrire au 01 66 28 35 66.
+Si une question sort de ce cadre, dis poliment que tu ne peux répondre qu'aux questions sur ces cours de TD d'Anglais, et propose de contacter directement le 01 66 28 35 66.`;
+
+      async function initAssistant() {
+        try {
+          sampleApi = await claude.use('sample');
+        } catch (e) {
+          sampleApi = null;
+        }
+      }
+
+      function toggleAiChat() {
+        document.getElementById('ai-chat-drawer').classList.toggle('hidden');
+      }
+      function askQuickQuestion(text) {
+        document.getElementById('chat-input').value = text;
+        sendAiMessage();
+      }
+
+      function appendBubble(text, isUser) {
+        const messagesContainer = document.getElementById('chat-messages');
+        const div = document.createElement('div');
+        div.className = isUser
+          ? 'bg-brand-blue/50 p-3 rounded-2xl text-white border border-brand-blue/50 max-w-[85%] ml-auto text-right font-medium'
+          : 'bg-slate-800/80 p-3 rounded-2xl text-slate-200 border border-slate-700/50 max-w-[85%] leading-relaxed';
+        div.textContent = text;
+        messagesContainer.appendChild(div);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        return div;
+      }
+
+      async function sendAiMessage() {
+        const input = document.getElementById('chat-input');
+        const query = input.value.trim();
+        if (!query) return;
+        input.value = '';
+        appendBubble(query, true);
+
+        if (!sampleApi) {
+          appendBubble(
+            "L'assistant intelligent n'est pas disponible dans cette vue. Contactez directement le Professeur SOUDO au 01 66 28 35 66 ou via WhatsApp.",
+            false
+          );
+          return;
+        }
+
+        const btn = document.getElementById('ai-send-btn');
+        btn.disabled = true;
+        document.getElementById('ai-status').innerText =
+          '• Réflexion en cours...';
+        const replyBubble = appendBubble('Réflexion...', false);
+
+        chatHistory.push({ role: 'user', content: query });
+        const turns = [
+          { role: 'user', content: COURSE_CONTEXT },
+          {
+            role: 'assistant',
+            content: 'Compris, je répondrai uniquement sur cette base.',
+          },
+          ...chatHistory,
+        ];
+
+        try {
+          const { text } = await sampleApi(turns, {
+            modelTier: 'quick',
+            cache: false,
+            onText: ({ text }) => {
+              replyBubble.textContent = text;
+              document.getElementById('chat-messages').scrollTop = 999999;
+            },
+          });
+          replyBubble.textContent = text;
+          chatHistory.push({ role: 'assistant', content: text });
+        } catch (e) {
+          if (e.code === 'not_granted') {
+            replyBubble.textContent =
+              "L'accès à l'assistant a été refusé pour cette session. Contactez le 01 66 28 35 66 pour toute question.";
+          } else if (e.code === 'rate_limited') {
+            replyBubble.textContent =
+              'Trop de questions à la fois : réessayez dans un instant, ou contactez le 01 66 28 35 66.';
+          } else {
+            replyBubble.textContent =
+              e.text ||
+              'Une erreur est survenue. Contactez le 01 66 28 35 66 pour toute question.';
+          }
+        } finally {
+          btn.disabled = false;
+          document.getElementById('ai-status').innerText = '• En ligne';
+        }
+      }
+
+      // ---------- Init ----------
+      window.onload = function () {
+        renderQuiz();
+        initCounters();
+        initAssistant();
+      };
+    </script>
+  </body>
+</html>
